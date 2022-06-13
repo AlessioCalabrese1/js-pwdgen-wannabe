@@ -1,17 +1,22 @@
-let userName = document.getElementById("userName").innerHTML;
-console.log(userName)
+let myPassword;
 
-userName = userName + prompt("Inserisci il tuo nome:");
+let userName = document.getElementById("userName").innerHTML;
+console.log(userName);
+
+let i = prompt("Inserisci il tuo nome:");
+myPassword = i;
+userName = userName + i;
 console.log(userName);
 
 document.getElementById("userName").innerHTML = userName;
 
 
-
+i = prompt("Inserisci il tuo cognome:");
+myPassword = myPassword + i;
 let lastName = document.getElementById("lastName").innerHTML;
 console.log(lastName)
 
-lastName = lastName + prompt("Inserisci il tuo cognome:");
+lastName = lastName + i;
 console.log(lastName);
 
 document.getElementById("lastName").innerHTML = lastName;
@@ -21,10 +26,16 @@ document.getElementById("lastName").innerHTML = lastName;
 let userFavoriteColor = document.getElementById("userFavoriteColor").innerHTML;
 console.log(userFavoriteColor)
 
-userFavoriteColor = userFavoriteColor + prompt("Inserisci il tuo colore preferito:");
+
+i = prompt("Inserisci il tuo colore preferito:");
+myPassword = myPassword + i;
+userFavoriteColor = userFavoriteColor + i;
 console.log(userFavoriteColor);
 
 document.getElementById("userFavoriteColor").innerHTML = userFavoriteColor;
+
+i = document.getElementById("myPassword").innerHTML;
+document.getElementById("myPassword").innerHTML = i + myPassword + "22";
 
 
 
